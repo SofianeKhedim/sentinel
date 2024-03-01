@@ -22,7 +22,7 @@ const Router = () => {
       children: [
         { path: '', element: <Home /> },
         { path: 'medciaments', element: <Medicaments /> },
-        { path: 'calender', element: <Calender /> },
+        { path: 'calendar', element: <Calender /> },
         { path: 'records', element: <Records /> },
         { path: 'side-effects', element: <SideEffects /> },
       ],
