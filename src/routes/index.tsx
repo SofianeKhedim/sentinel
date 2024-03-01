@@ -1,6 +1,6 @@
 import { lazy } from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
-// import useUser from '@/hooks/useUser';
+import useUser from '@/hooks/useUser';
 
 import Layout from '@/layouts/Main';
 import Home from '@/pages/Home';
@@ -13,8 +13,8 @@ const Login = lazy(() => import('@/pages/Login'));
 const Error404 = lazy(() => import('@/pages/Errors/Error404'));
 
 const Router = () => {
-  //   const { user } = useUser();
-  const user = true;
+    const { user } = useUser();
+//   const user = true;
   return useRoutes([
     {
       path: '/',
