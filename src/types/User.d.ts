@@ -4,6 +4,10 @@ declare interface UserAuthI {
 }
 
 declare interface UserI extends Omit<UserAuthI, 'password'> {
-  id: string;
-  name: string;
+  access_token: string;
+  user: {
+    id: number;
+    email: string;
+    name: string;
+  };
 }

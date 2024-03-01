@@ -5,7 +5,7 @@ export default function CardMeet() {
   return (
     <div className='bg-[#F6F8FF] px-3 py-6 space-y-12  rounded-[24px] '>
       <div className=' space-y-2'>
-        <div className='flex flex-row items-center justify-between'>
+        <div className='flex flex-col'>
           <h2 className='font-inter  font-bold text-3xl text-[#1B2559] '>Upcomming event</h2>
           {/* this it timer for the next consultation    */}
           <h2 className='font-sans font-semibold text-2xl text-[#8294FF]'>3h24min</h2>
