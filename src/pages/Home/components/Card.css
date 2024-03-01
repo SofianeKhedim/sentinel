@@ -1,0 +1,14 @@
+
+.gr{
+    background: linear-gradient(0deg, #FFF -33.33%, #C8CFFF 136.11%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.sh{
+
+background: var(--button, #5D72F5);
+
+/* SOFT SHADOW */
+box-shadow: 0px 3px 10px 0px rgba(98, 118, 240, 0.51);
+}

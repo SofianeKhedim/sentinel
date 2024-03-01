@@ -29,7 +29,7 @@ const navs = [
 ];
 function Nav() {
   return (
-    <div className="p-2 pt-4 ">
+    <div className="p-2 pt-4   ">
       <div className="flex flex-row justify-around items-center w-full -bottom-2">
         {navs.map((elm, i) => (
           <Link

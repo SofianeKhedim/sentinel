@@ -16,7 +16,7 @@ export function DropdownMenuRadioGroupDemo() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="flex flex-row items-center">abderahman_01 <ChevronDown width="13px"/></Button>
+        <Button variant="outline" className="flex flex-row items-center font-semibold">abderahman_01 <ChevronDown width="13px"/></Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         {/* <DropdownMenuLabel>Panel Position</DropdownMenuLabel> */}
