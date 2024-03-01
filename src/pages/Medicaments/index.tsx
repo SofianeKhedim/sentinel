@@ -1,5 +1,15 @@
-import React from 'react';
+import {AccordionDemo} from '@/pages/SideEffects/components/AccordionDemo'
+import Search from '@/pages/Records/components/Search'
 
-export default function Medicaments() {
-  return <div>Medicaments</div>;
+import Submit from '@/pages/Records/components/Submit'
+function Medicaments() {
+  return (
+    <div className='px-5'>
+      <Search/>
+      <AccordionDemo/>
+      <Submit/>
+    </div>
+  )
 }
+
+export default Medicaments

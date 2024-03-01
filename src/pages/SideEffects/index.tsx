@@ -1,8 +1,9 @@
-import React from 'react'
 
 function SideEffects() {
   return (
-    <div>SideEffects</div>
+    <div className='px-5'>
+     side effects
+    </div>
   )
 }
 
