@@ -1,7 +1,9 @@
-import React from 'react';
-
+import UserDiv from "@/pages/Home/components/userDiv";
 function Home() {
-  return <div>Home</div>;
+  return <div>
+    <UserDiv/>
+
+  </div>;
 }
 
 export default Home;

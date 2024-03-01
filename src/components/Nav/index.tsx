@@ -39,7 +39,7 @@ function Nav() {
           >
             <span
               className={` ${
-                location.pathname === elm.path ? 'text-primary' : ''
+                location.pathname === elm.path ? 'text-primary' : 'text-[#808080]'
               }`}
             >
               {elm.icon}
@@ -48,7 +48,7 @@ function Nav() {
               className={`text-sm  font-medium ${
                 location.pathname === elm.path
                   ? 'text-primary font-semibold'
-                  : ''
+                  : 'text-[#808080]'
               }`}
             >
               {elm.name}
