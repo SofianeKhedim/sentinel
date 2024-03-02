@@ -1,36 +1,13 @@
+import { useGetTasksQuery } from '@/app/backend/endpoints/tasks';
+import Fallback from '@/components/Fallback';
 import Task from '@/pages/Home/components/Task';
 // import { Button } from "@/components/ui/button"
 
-const tasks = [
-  {
-    task: 'Task01',
-    nextIn: '2h',
-    done: '2/3',
-  },
-  {
-    task: 'Task01',
-    nextIn: '2h',
-    done: '2/3',
-  },
-  {
-    task: 'Task01',
-    nextIn: '2h',
-    done: '2/3',
-  },
-  {
-    task: 'Task01',
-    nextIn: '2h',
-    done: '2/3',
-  },
-  {
-    task: 'Task01',
-    nextIn: '2h',
-    done: '2/3',
-  },
-  
-];
+const DailyTasks = () => {
+  const { data, isLoading } = useGetTasksQuery(null);
 
-export default function DailyTasks() {
+  console.log(data);
+  if (isLoading) return <Fallback />;
   return (
     // mazal manzid  ndir gradient
     <div className=" pt-7 ">
@@ -38,14 +15,20 @@ export default function DailyTasks() {
         Daily Tasks
       </h3>
       <div className="overflow-y-scroll h-[390px] space-y-4">
-        {tasks.map((elm, i) => (
-          <Task
-            key={'task' + i}
-            task={elm.task}
-            nextIn={elm.nextIn}
-            done={elm.done}
-          />
-        ))}
+        {data ? (
+          data.map((elm) => (
+            <Task
+              key={elm.id}
+              task={elm.prescription.medicine.brand}
+              nextIn={elm.date}
+              id={elm.id}
+              dci={elm.prescription.medicine.dci}
+              checked={elm.validated === 1 ? true : false}
+            />
+          ))
+        ) : (
+          <p>no tasks</p>
+        )}
       </div>
       {/* <div className='flex flex-row justify-around pt-8'>
         <Button className='text-[18px] font-Inter font-[500] py-4 px-5'>add med</Button>
@@ -54,4 +37,6 @@ export default function DailyTasks() {
         </div> */}
     </div>
   );
-}
+};
+
+export default DailyTasks;
