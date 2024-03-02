@@ -13,10 +13,6 @@ export default function DoctorsInfos() {
         {data?.map((doctor, i) => (
           <Doctor key={i} Name={doctor.name} />
         ))}
-        {/* <Doctor Name="Dr. Ethan Harris" />
-        <Doctor Name="Dr. REGUIEG Zakaria" />
-        <Doctor Name="Dr. mohamed Harris" />
-        <Doctor Name="Dr. kilimon papari" /> */}
       </div>
     </div>
   );

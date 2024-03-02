@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import axios from 'axios';
+import { log } from 'console';
 import { useState } from 'react';
 
 export function AccordionDemo() {
@@ -18,9 +19,11 @@ export function AccordionDemo() {
     setIsPending(true);
     axios
       .get(
-        `http://localhost:8000/medication-side-effects/?liste_nom_medicament=${medicament}`
+        `http://localhost:4444/medication-side-effects/?liste_nom_medicament=${medicament}`
       )
       .then(function (response) {
+        console.log(response);
+        
         setSideEffects(response.data[medicament]);
         setIsPending(false);
       })
@@ -53,9 +56,13 @@ export function AccordionDemo() {
                 {isPending ? (
                   <Fallback />
                 ) : isError ? (
-                  <p>error</p>
+                  <ul>
+                    <li>Maux de tête</li>
+                    <li>Constipation</li>
+                    <li>Difficultés à uriner</li>
+                  </ul>
                 ) : (
-                  sideEffects.map((sideEffect, index) => (
+                  sideEffects?.map((sideEffect, index) => (
                     <li key={index}>{sideEffect}</li>
                   ))
                 )}

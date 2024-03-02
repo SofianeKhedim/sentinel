@@ -12,6 +12,7 @@ app = FastAPI(
     title="Medication Side Effects API",
 )
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Replace ["*"] with specific origins if needed
