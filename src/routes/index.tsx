@@ -14,7 +14,7 @@ const Error404 = lazy(() => import('@/pages/Errors/Error404'));
 
 const Router = () => {
     const { user } = useUser();
-//   const user = true;
+  // const user = true;
   return useRoutes([
     {
       path: '/',
