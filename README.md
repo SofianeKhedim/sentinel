@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Sentinels App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+Welcome to Sentinels, a mobile application revolutionizing elderly care management. This innovative solution consolidates healthcare tasks, creating a seamless experience for caregivers, family members, and friends. Keep reading to discover the key features, setup instructions, and how to contribute to the project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
 
-## Expanding the ESLint configuration
+Check out the live demo of Sentinels [here](https://drive.google.com/file/d/1gZF12fi77KstNXslekGMPHeF3F0OMipu/view?usp=drive_link).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+1. **Medication Tracking:**
+   - Easily record and monitor daily medication intake.
+   - Receive timely reminders for medication doses.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Interactive Calendar:**
+   - View upcoming medical appointments at a glance.
+   - Set customizable reminders for essential events.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. **Digital Medical Record:**
+   - Securely store and access comprehensive medical information.
+   - Share selective details with healthcare professionals.
+
+4. **Personalized Medication Information:**
+   - Access a database of medication side effects tailored to each individual.
+   - Stay informed about changes in reported side effects.
+
+5. **Collaborative Platform:**
+   - Bring caregivers, friends, and family together in a centralized interface.
+   - Facilitate direct and instant communication through in-app messaging.
+
+6. **Customizable Notifications:**
+   - Configure personalized reminders based on specific needs.
+   - Adjust notification preferences for an optimal user experience.
+
+7. **Virtual Assistance:**
+   - Utilize an integrated chatbot for quick answers to common questions.
+   - Interactive guide to assist users in navigating the application.
+
+8. **Security and Privacy:**
+   - Robust security protocols to protect sensitive data.
+   - Options for privacy control regarding medical information sharing.
+
